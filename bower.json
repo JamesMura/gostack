@@ -1,0 +1,18 @@
+{
+  "name": "gostack",
+  "version": "0.0.0",
+  "authors": [
+    "James Muranga <jmured@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootswatch": "~3.2.0+1"
+  }
+}
