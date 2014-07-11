@@ -25,10 +25,9 @@ func Index(w http.ResponseWriter, r *http.Request, _ httprouter.Params) {
 	}
 }
 
-
 func main() {
 	router := httprouter.New()
 	router.GET("/", Index)
-	router.GET("/static",  http.StripPrefix("/static/", http.FileServer(http.Dir("public")))
+	router.GET("/static", http.StripPrefix("/static/", http.FileServer(http.Dir("public"))))
 	log.Fatal(http.ListenAndServe(":8080", router))
 }
