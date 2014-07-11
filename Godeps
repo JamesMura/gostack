@@ -1,2 +1,4 @@
 github.com/julienschmidt/httprouter
 github.com/yosssi/gold
+github.com/onsi/ginkgo/ginkgo
+github.com/onsi/gomega
