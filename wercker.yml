@@ -14,7 +14,6 @@ build:
           cd $WERCKER_SOURCE_DIR
           go version
           wget -qO- https://raw.githubusercontent.com/pote/gpm/v1.2.3/bin/gpm | bash
-          gpm install
 
     # Build the project
     - script:
