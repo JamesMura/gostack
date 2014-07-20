@@ -25,3 +25,4 @@ _testmain.go
 .godeps
 public/components
 .DS_Store
+.idea
