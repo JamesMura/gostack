@@ -1,19 +1,4 @@
-doctype html
-html lang=en
-  head
-    title {{.Title}}
-    link href=/static/css/app.css rel=stylesheet
-    link href=/static/components/bootswatch/yeti/bootstrap.min.css rel=stylesheet
-  body
-    .navbar.navbar-default.navbar-fixed-top
-      .container
-        .navbar-header
-          a.navbar-brand href=# GoStack
-        .navbar-collapse.collapse#navbar-main
-          ul.nav.navbar-nav
-            li
-              a href=/register Register
-    .container
-      h1 GoStack
-      p.
-        OpenStack Solution
+extends ./base
+
+block content
+  h1 GoStack

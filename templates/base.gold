@@ -1,0 +1,19 @@
+doctype html
+html lang=en
+  head
+    title {{.Title}}
+    link href=/static/css/app.css rel=stylesheet
+    link href=/static/components/bootswatch/lumen/bootstrap.min.css rel=stylesheet
+  body
+    .navbar.navbar-default.navbar-fixed-top
+      .container
+        .navbar-header
+          a.navbar-brand href=# GoStack
+        .navbar-collapse.collapse#navbar-main
+          ul.nav.navbar-nav
+            li
+              a href=/register Register
+            li
+              a href=/login Login
+    .container
+      block content

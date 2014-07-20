@@ -1,0 +1,26 @@
+extends ./base
+block content
+  form.form-vertical.col-md-6 method=post action=/register
+    h2 Register
+    .form-group
+      label Username
+      {{if .username}}
+        input.form-control type=text name=username value={{.username}}
+      {{else}}
+        input.form-control type=text name=username
+      {{end}}
+
+    .form-group
+      label Password
+      input.form-control type=password name=password
+    .form-group
+      label Confirm Password
+      input.form-control type=password name=confirmPassword
+    input.btn.btn-default type=submit value=Register
+  {{if .errors}}
+    .row
+      .col-md-7
+        {{range .errors}}
+          h3.text-danger {{.}}
+        {{end}}
+  {{end}}
